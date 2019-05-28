@@ -1,0 +1,17 @@
+﻿<Window x:Name="clos" x:Class="BarraDeProgresoPausa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BarraDeProgresoPausa"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+            <Button x:Name="BotonInicio" Click="BotonInicio_Click" Width="170" Height="40" Content="Iniciar" FontSize="20"/>
+            <Button x:Name="BotonPausar" Click="BotonPausar_Click" Width="170" Height="40" Content="Pausar" FontSize="20" IsEnabled="False"/>
+        </StackPanel>
+       
+        <ProgressBar x:Name="Barra"  HorizontalAlignment="Center" Height="50" Margin="0,270,0,0" VerticalAlignment="Top" Width="300"/>
+    </Grid>
+</Window>
